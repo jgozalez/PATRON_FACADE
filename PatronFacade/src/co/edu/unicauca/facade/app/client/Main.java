@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patronfacade;
+package co.edu.unicauca.facade.app.client;
 
 /**
  *
- * @author Camilo Gonzalez
+ * @author EdynsonMJ
  */
-public class PatronFacade {
+public class Main {
 
     /**
      * @param args the command line arguments
