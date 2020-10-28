@@ -35,6 +35,23 @@ public class Customer {
      */
     public Customer() {
     }
+
+    /**
+     * constructor parametrizado
+     * @param id identificacion del cliente
+     * @param name nombre del cliente
+     * @param address direccion del cliente
+     * @param mobile numero telefonico del cliente
+     * @param city ciudad 
+     */
+    public Customer(int id, String name, String address, String mobile, String city) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.mobile = mobile;
+        this.city = city;
+    }
+    
     //SET AND GET
     public int getId() {
         return id;

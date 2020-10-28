@@ -6,6 +6,7 @@
 package co.edu.unicauca.facade.domain.order;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -45,13 +46,14 @@ public class Order {
      * @param customer cliente
      */
     public Order(Customer customer) {
+        list = new ArrayList<Item>();
         this.customer = customer;
     }
     
     /**
      * agrega un nuevo item a la orden
      * @param dish plato.
-     * @param amount ...
+     * @param amount cantidad de platos
      */
     public void addDish(Dish dish, int amount){
         Item auxiliar = new Item(dish, amount);

@@ -26,22 +26,22 @@ public class OrderFacade {
      * @param customer cliente
      */
     public void createOrder(Customer customer){
-        
+        order = new Order(customer);
     }
     /**
      * AUN NO IMPLEMENTADO adiciona un plato a la orden
      * @param dish plato
-     * @param amount no se...
+     * @param amount cantidad de platos
      */
     public void addDish(Dish dish, int amount){
-        
+        order.addDish(dish, amount);
     }
     /**
      * AUN NO IMPLEMENTADO, cambia el estado del pedido
      * @param state statado
      */
     public void changeState(State state){
-        
+        order.setState(state);
     }
     /**
      * AUN NO IMPLEMENTADO
